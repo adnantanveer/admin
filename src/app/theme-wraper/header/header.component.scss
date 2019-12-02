@@ -1,0 +1,38 @@
+.header-height{
+    height: 70px;
+    box-shadow: 0px 0px 3px 0px #c7bebe;
+}
+
+//rounded 
+.rounded-background{
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    border-radius: 24px;
+    font-size: 17px;
+}
+
+//background color for search icon circle
+.search{
+    background-color: #031d66;
+}
+//background color for notification icon circle
+
+.notifications{
+    background-color: #d5102e
+}
+
+//background color for listing icon circle
+
+.listing{
+    background-color: #d4d7de;
+}
+
+@media(max-width: 850px){
+    .mobile-display{
+        display: block!important;
+    }
+}
+

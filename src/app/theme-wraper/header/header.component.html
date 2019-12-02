@@ -1,0 +1,47 @@
+<div class="container-fluid header">
+    <div class="row">
+        <div class="col d-flex justify-content-end align-items-center header-height">
+
+            <!--search div starts here-->
+            <div class="search rounded-background mr-3">
+                <i class="fa text-white fa-search"></i>
+            </div>
+            <!--search div ends here-->
+
+            <!--notifications div starts here-->
+            <div class="notifications rounded-background mr-3">
+                <i class="fa text-white fa-bell"></i>
+            </div>
+            <!--notifications div ends here-->
+
+            <!--listing div starts here-->
+            <div class="listing rounded-background mr-3">
+                <img src="assets/svg/grid.svg" />
+            </div>
+            <!--listing div ends here-->
+
+            <!--div for dropdown for mobile device-->
+            <div ngbDropdown class="d-inline-block rounded-background">
+                <img class="w-100 h-100 rounded-circle" id="dropdownBasic1" ngbDropdownToggle
+                    src="assets/images/profilepic.jpeg" />
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Logout</button>
+                    <button ngbDropdownItem>Edit Profile</button>
+                 
+                    <!--for mobile device-->
+                    <div class="d-none mobile-display">
+                        <button ngbDropdownItem>News</button>
+                        <button ngbDropdownItem>Calender</button>
+                        <button ngbDropdownItem>News</button>
+                        <button ngbDropdownItem>Benifits</button>
+                        <button ngbDropdownItem>Learning</button>
+                        <button ngbDropdownItem>Goals</button>
+                        <button ngbDropdownItem>Goals</button>
+                        <button ngbDropdownItem  [routerLink]="[routes.workforceRecruitmentnav]">Manager</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

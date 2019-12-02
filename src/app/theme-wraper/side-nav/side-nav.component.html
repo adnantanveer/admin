@@ -1,0 +1,17 @@
+<div class="sidebar testscroll">
+
+    <div class="menu-list">
+        <ul class="list-unstyled">
+            <li></li>
+            <li  *ngFor="let elements of sidenav">
+                <div routerLink="{{elements.route}}" routerLinkActive="active"  class="padding-adjust">
+                    <div style="display: grid">
+                        <i class="{{elements.icon}}"> </i>
+                    </div>
+                    <span style="display: grid mt-1">{{elements.name}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>

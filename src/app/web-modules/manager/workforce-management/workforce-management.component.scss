@@ -1,0 +1,81 @@
+.worlforce-header {
+  background: url("../../../../assets/images/workforce/header-banner.svg");
+  .col {
+    height: 94px;
+    margin-left: 30px;
+  }
+  h2 {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+}
+
+//custom nav scss
+.custom-nav {
+  background-color: #ededed;
+  ul {
+    width: 60%;
+    flex-wrap: wrap;
+    li {
+      width: 20%;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+    }
+  }
+  ul {
+    li:hover {
+      background: #ffffff;
+      font-weight: bold;
+    }
+    li.active {
+      background: #ffffff;
+      border-bottom: 6px solid #265aad;
+      font-weight: bold;
+    }
+  }
+}
+
+.common-padding {
+  padding: 10px 121px 10px 121px;
+}
+
+@media (max-width: 1000px) {
+  .custom-nav {
+    ul {
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .worlforce-header {
+    margin-left: 0px;
+    h2 {
+      font-size: 22px;
+      
+    }
+  }
+  .common-padding{
+    padding: 0px;
+  }
+  .custom-nav {
+    ul{
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-nav {
+    ul {
+      li {
+        width: 33%;
+        font-size: 14px;
+      }
+    }
+  }
+}

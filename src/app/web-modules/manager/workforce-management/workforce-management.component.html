@@ -1,0 +1,44 @@
+<!--header starts here-->
+<section class="worlforce-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <h2 class="text-white">Workforce Management</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--header starts here-->
+
+<!--li custom nav tab starts here-->
+
+<div class="container-fluid p-0 m-0">
+    <div class="row p-0 m-0">
+        <div class="col custom-nav p-0 m-0">
+            <ul class="d-flex m-0 p-0" type="none">
+                <li routerLinkActive="active" [routerLink]="[routes.workforceplanningnav]">
+                    Planning
+                </li>
+                <li routerLinkActive="active" [routerLink]="[routes.workforceRecruitmentnav]">
+                    Recruiting
+                </li>
+                <li routerLinkActive="active" [routerLink]="[routes.workforceOnboardingnav]">
+                    Onboarding
+                </li>
+                <li routerLinkActive="active" [routerLink]="[routes.workforceDevelopingnav]">
+                    Developing
+                </li>
+                <li routerLinkActive="active" [routerLink]="[routes.workforceSeperatingnav]">
+                    Seperating
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--li custom nav tab starts here-->
+<!--child component will appear in this div from recruitment, planning, onboarding, developing and seperating-->
+<div class="common-padding">
+    <router-outlet></router-outlet>
+</div>
+<!--li custom nav tab ends here-->

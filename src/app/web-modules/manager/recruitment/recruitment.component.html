@@ -1,0 +1,84 @@
+<!--filter section-->
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div>
+                <div class="mobile-display d-inline ">
+                    <button class="btn primary-btn mr-3 mb-2">All</button>
+                    <button class="btn secondary-btn mr-sm-3 mb-2">Full Time</button>
+                </div>
+                <div class="d-inline">
+                    <button class="btn secondary-btn mr-3 mb-2">Contact</button>
+                    <button class="btn secondary-btn mb-2">Open</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--filter section ends here-->
+
+<!--inner main content section-->
+<section class="innner-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-between">
+                <div>
+                    <img _ngcontent-uph-c3="" src="assets/svg/grid.svg">
+                </div>
+                <div>
+                    <h2>Talent Team</h2>
+                </div>
+                <div>
+                    <span class="workout-txt">Workout<sup class=" bg-suprtxt">3</sup></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-5" *ngFor="let card of cards">
+                <!--card starts here-->
+                <div class="card">
+                    <!--card body starts here-->
+                    <div class="card-body p-0 m-0 pt-5">
+                        <!--div based on condition for c coming on top of card right side-->
+                        <div *ngIf="card.show" class="flash-c">
+                            <span>C</span>
+                        </div>
+
+                        <div class="requestion">
+                            <div class="">
+                                <div style="margin: 0 auto; height: 70px ; width: 70px">
+                                    <img class="w-100 h-100 rounded-circle" src="{{card.source}}">
+                                </div>
+                                <div class="pb-3">
+                                    <span class="d-block req-status text-center">{{card.status}}</span>
+                                    <span class="d-block req-position text-center">{{card.position}}</span>
+                                    <span class="number d-block text-center">{{card.telno}}</span>
+                                </div>
+                            </div>
+                            <hr class="p-0 m-0" />
+                        </div>
+                        <div class="py-3 text-center req-action">
+                            <div class="small-circle"></div>
+
+                            <!--this select section can be made dynamic once we get the data from api and we can pass the vaue from ts file-->
+                            <select>
+                                <option>1 task requiring action</option>
+                                <option>1 task requiring action</option>
+                                <option>1 task requiring action</option>
+                            </select>
+                            <!--select section ends here-->
+                        </div>
+
+                    </div>
+                    <!--card body ends here-->
+
+                </div>
+
+                <!--card ends here-->
+
+            </div>
+        </div>
+    </div>
+</section>
